@@ -1,47 +1,123 @@
 #header-crest {
 	text-align: center;
 }
+
 #header-crest img {
-	height:300px;
+	height: 300px;
 	margin: 100px 0 50px 0;
 }
+
 .navbar-brand {
-	font-family: 'garamond', serif;
-    color: white !important;
-    font-size: 24px;
-    line-height: 30px;
-    margin: 15px 0;
+	font-family: 'Garamond', serif;
+	color: #ffcc00 !important; /* High contrast color */
+	font-size: 24px;
+	line-height: 30px;
+	margin: 15px 0;
 }
+
 #main-menu {
-	border-radius:unset;
+	border-radius: unset;
+	background-color: #333333; /* Dark background for better contrast */
 }
+
 #main-menu .navbar-nav {
 	margin: 15px 0;
 }
+
+#main-menu a {
+	color: #ffcc00; /* High contrast link color */
+	text-decoration: none;
+}
+
+#main-menu a:focus,
+#main-menu a:hover {
+	background-color: #444444; /* Slightly lighter for hover effect */
+	color: white;
+}
+
+#main-menu .navbar-nav li.active a {
+	background-color: #555555;
+	color: white;
+}
+
 .container {
 	max-width:1300px;
 }
 #page-footer {
-	margin-top:100px;
-	background:cornsilk;
-	min-height:150px;
+	margin-top: 100px;
+	background-color: #333333; /* Dark background for better contrast */
+	color: #ffcc00; /* High contrast text color */
+	min-height: 150px;
 }
-#page-content {
-	margin-top: 50px;
+
+#page-footer td {
+	color: #ffcc00;
+	text-align: center;
 }
+
 #footer-links {
 	list-style-type: none;
 }
-#footer-links li,
-#page-footer td {
-	text-align:center;
+
+#footer-links li {
+	text-align: center;
 }
+
+#page-footer a {
+	color: #ffcc00; /* High contrast link color */
+	text-decoration: none;
+}
+
+#page-footer a:focus,
+#page-footer a:hover {
+	background-color: #444444;
+	color: white;
+	outline: 2px solid #ffcc00;
+}
+
 #page-footer .container {
-	padding-top:10px;
+	padding-top: 10px;
 }
+
 #skip-link {
-	color:white;
+	color: white;
+	background-color: #333333; /* Dark background for visibility */
+	padding: 8px 16px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	z-index: 1000;
 }
+
 #skip-link:focus {
-	background:blue;
+	background-color: #0056b3; /* Blue focus background for visibility */
+	color: white;
+	outline: 2px solid #ffcc00;
+}
+
+a:focus,
+button:focus {
+	outline: 2px solid #ffcc00;
+	outline-offset: 2px;
+}
+
+#colorButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#colorButton:hover {
+    background-color: #003d80;
+}
+
+#colorButton:focus {
+    outline: 2px solid #ffcc00;
+    outline-offset: 3px;
 }
